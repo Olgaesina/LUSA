@@ -1,11 +1,5 @@
-from pyexpat.errors import messages
 
-string1 = "Привет,"
-string2 = "мир!"
-result = string1 + string2
+message = "  hello world!  "
+trimmed_message = message.strip()  # удалили пробелы по краям
+result = trimmed_message.upper()  # перевели в верхний регистр
 print(result)
-
-name = "Анна"
-age = 25
-messages = f"{name},{age} лет"
-print(messages)
